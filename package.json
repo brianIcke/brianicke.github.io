@@ -6,10 +6,11 @@
   "scripts": {
     "watch:sass": "npx sass --watch _src/sass:_site/css",
     "build:sass": "npx sass _src/sass:_site/css",
-    "watch:eleventy": "npx @11ty/eleventy --formats=njk,html,css --serve",
-    "build:eleventy": "npx @11ty/eleventy --formats=njk,html,css",
+    "watch:eleventy": "npx @11ty/eleventy --formats=njk,html,css,md --serve",
+    "build:eleventy": "npx @11ty/eleventy --formats=njk,html,css,md",
+    "prettier": "npx prettier --write _site/*",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "build": "npm-run-all build:* --parallel prettier"
   },
   "repository": {
     "type": "git",

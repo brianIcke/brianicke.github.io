@@ -1,5 +1,32 @@
-$heading_color: #a2d2ff;
+$background_color: #1b263b;
+$header_color: #0d1b2a;
 
-h1 {
-    color: $heading_color;
+$title_font: 'Oswald', sans-serif;
+$content_font: 'Roboto', sans-serif;
+
+html, body {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: $background_color;
+}
+
+.main-header {
+    background-color: $header_color;
+}
+
+.main-header__title {
+    margin: 0px;
+    padding: 5px;
+    font-family: $title_font;
+    color: white;
+}
+
+main {
+    text-align: center;
+    font-family: $content_font;
 }

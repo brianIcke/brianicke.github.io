@@ -3,5 +3,9 @@ layout: "layouts/default.njk"
 title: "Home"
 ---
 
-<h1>Herzlich Willkommen!</h1>
-<p>Diese Website befindet sich momentan im Aufbau.</p>
+<article>
+{%- for post in collections.posts -%}
+    <h2>{{ post.data.title }}</h2>
+    {{ post.templateContent | safe }}
+{%- endfor -%}
+</article>
