@@ -4,10 +4,13 @@ $header_color: #0d1b2a;
 $title_font: 'Oswald', sans-serif;
 $content_font: 'Roboto', sans-serif;
 
-html, body {
-    border: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
     color: white;
 }
 
@@ -17,13 +20,29 @@ body {
 
 .main-header {
     background-color: $header_color;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 75px;
 }
 
 .main-header__title {
     margin: 0px;
-    padding: 5px;
+    padding: 7px;
+    font-size: 30px;
+    flex: 1;
     font-family: $title_font;
     color: white;
+}
+
+.main-header__hamburger-icon {
+    font-size: 45px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
