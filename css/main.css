@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  border: 0;
   margin: 0;
-  box-sizing: border-box;
+  height: 100%;
   color: white;
 }
 
@@ -12,13 +15,29 @@ body {
 
 .main-header {
   background-color: #0d1b2a;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 75px;
 }
 
 .main-header__title {
   margin: 0px;
-  padding: 5px;
+  padding: 7px;
+  font-size: 30px;
+  flex: 1;
   font-family: "Oswald", sans-serif;
   color: white;
+}
+
+.main-header__hamburger-icon {
+  font-size: 45px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
